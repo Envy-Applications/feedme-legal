@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Legal documents for the Feed Me mobile app." />
+  <title>Feed Me — Legal</title>
+  <style>
+    :root {
+      --parchment: #fbf3e2;
+      --cream: #fceed7;
+      --ink: #2a1f18;
+      --ink-soft: #5a4a3d;
+      --muted: #8a7e6e;
+      --saffron: #c9881d;
+      --border: #e2d2b8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--parchment);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    main {
+      max-width: 520px;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 1.1;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+
+    p.tagline {
+      color: var(--muted);
+      margin: 0 0 40px;
+      font-size: 15px;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr;
+    }
+
+    a.card {
+      display: block;
+      padding: 20px 24px;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 120ms ease, border-color 120ms ease;
+    }
+
+    a.card:hover {
+      transform: translateY(-1px);
+      border-color: var(--saffron);
+    }
+
+    a.card .label {
+      font-size: 18px;
+      display: block;
+    }
+
+    a.card .desc {
+      display: block;
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--ink-soft);
+    }
+
+    footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--saffron);
+      text-decoration: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --parchment: #1a1410;
+        --cream: #241b16;
+        --ink: #f5edd9;
+        --ink-soft: #d8c9b0;
+        --muted: #8a7e6e;
+        --saffron: #e8a33d;
+        --border: #3a302a;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Feed Me</h1>
+    <p class="tagline">Legal &amp; policy documents</p>
+
+    <div class="card-grid">
+      <a class="card" href="./privacy.html">
+        <span class="label">Privacy Policy</span>
+        <span class="desc">What we collect and how we handle your data</span>
+      </a>
+      <a class="card" href="./terms.html">
+        <span class="label">Terms of Service</span>
+        <span class="desc">The rules for using the app</span>
+      </a>
+    </div>
+
+    <footer>
+      Questions? <a href="mailto:envy_applications@outlook.com">envy_applications@outlook.com</a>
+    </footer>
+  </main>
+</body>
+</html>
