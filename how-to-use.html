@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="A friendly guide to using the Feed Me app — planning meals, tracking food, shopping lists, and recipes." />
+  <title>How to use Feed Me</title>
+  <style>
+    :root {
+      --parchment: #fbf3e2;
+      --cream: #fceed7;
+      --ink: #2a1f18;
+      --ink-soft: #5a4a3d;
+      --muted: #8a7e6e;
+      --saffron: #c9881d;
+      --border: #e2d2b8;
+      --border-soft: #efe3cc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--parchment);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    header.doc-head {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.15;
+      margin: 0 0 12px;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    h2 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.25;
+      margin: 48px 0 12px;
+      color: var(--ink);
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 28px 0 8px;
+      color: var(--ink);
+    }
+
+    p, li {
+      color: var(--ink-soft);
+    }
+
+    p { margin: 0 0 16px; }
+
+    .lead {
+      font-size: 18px;
+      color: var(--ink-soft);
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+
+    a {
+      color: var(--saffron);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    strong { color: var(--ink); font-weight: 600; }
+
+    ul, ol {
+      padding-left: 22px;
+      margin: 0 0 16px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    hr {
+      border: 0;
+      border-top: 1px solid var(--border-soft);
+      margin: 40px 0;
+    }
+
+    .tip {
+      background: var(--cream);
+      border: 1px solid var(--border-soft);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 16px 0 24px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 18px 64px; }
+      h1 { font-size: 28px; }
+      h2 { font-size: 21px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --parchment: #1a1410;
+        --cream: #241b16;
+        --ink: #f5edd9;
+        --ink-soft: #d8c9b0;
+        --muted: #8a7e6e;
+        --saffron: #e8a33d;
+        --border: #3a302a;
+        --border-soft: #2a221c;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="doc-head">
+      <h1>How to use Feed Me</h1>
+      <p class="meta">Your guide to getting started</p>
+    </header>
+
+    <p class="lead">Welcome to Feed Me 👋 — your warm little kitchen companion for planning meals, tracking what you eat, building a shopping list, and saving recipes from anywhere.</p>
+    <p>This guide walks you through everything, step by step. You don&rsquo;t need to read it all — jump to whatever you&rsquo;re trying to do.</p>
+
+    <h2>Getting around</h2>
+    <p>Feed Me has five tabs along the bottom:</p>
+    <ul>
+      <li><strong>Today</strong> — your daily food diary and calorie/macro tracker.</li>
+      <li><strong>Plan</strong> — plan meals for the week ahead.</li>
+      <li><strong>Scan</strong> (the round button in the middle) — the quickest way to log food or add a recipe.</li>
+      <li><strong>Recipes</strong> — browse the recipe library and your own saved recipes.</li>
+      <li><strong>Profile</strong> — your details, preferences, and settings.</li>
+    </ul>
+    <p>When you first sign up, Feed Me asks you a few quick questions (your goal, a bit about you, how you like to cook, any dietary preferences) and builds a personalised plan with daily targets. You only do this once.</p>
+
+    <hr />
+
+    <h2>Today — your daily food diary</h2>
+    <p>The <strong>Today</strong> tab is where you keep an eye on what you&rsquo;ve eaten.</p>
+
+    <h3>The calorie ring</h3>
+    <p>The big ring shows the calories you&rsquo;ve eaten so far against your daily target — for example <strong>1,750 / 2,000</strong>. Underneath it tells you how many you have <strong>left</strong> (or how many you&rsquo;re <strong>over</strong>). If you&rsquo;ve connected Apple Health, calories you burn through exercise can be added on top (see <em>Apple Health</em> below).</p>
+    <p>Three bars below the ring track your <strong>protein</strong>, <strong>carbs</strong>, and <strong>fat</strong> for the day against your targets. Don&rsquo;t worry if those words are new:</p>
+    <ul>
+      <li><strong>Protein</strong> helps build and repair your body.</li>
+      <li><strong>Carbs</strong> are your main energy source.</li>
+      <li><strong>Fat</strong> keeps you full and supports your body.</li>
+    </ul>
+
+    <h3>Logging your food</h3>
+    <p>There are four quick ways to log a meal — tap any of the buttons on Today, or use the <strong>Scan</strong> tab:</p>
+    <ol>
+      <li><strong>Describe</strong> — type what you ate (e.g. &ldquo;2 eggs on toast with butter&rdquo;). Pick a match from the list, or let Feed Me estimate it for you.</li>
+      <li><strong>Photo</strong> — snap or choose a photo of your plate and Feed Me estimates the calories and macros.</li>
+      <li><strong>Barcode</strong> — scan a packaged product&rsquo;s barcode to pull in its nutrition.</li>
+      <li><strong>Library</strong> — log something from your saved recipes.</li>
+    </ol>
+    <p>Everything you log appears in your day, and the ring and bars update straight away. Tap the big card on Today to see the full day and add or remove entries.</p>
+
+    <h3>Your weight</h3>
+    <p>Tap the <strong>weight card</strong> to log today&rsquo;s weigh-in. Feed Me shows your 7-day average and the trend over time, so day-to-day wobbles don&rsquo;t worry you. Tap <strong>Trends</strong> (or press and hold the card) to see your charts.</p>
+
+    <h3>History and trends</h3>
+    <p>Tap the Today card to open the full day, then use the <strong>Analytics / Trends</strong> screen to look back over the last week, month, or longer. You&rsquo;ll see your average calories, weight change, and how many days you logged. Tap any day to see exactly what you ate.</p>
+
+    <h3>Your daily targets</h3>
+    <p>Your targets (calories, protein, carbs, fat) are worked out automatically from your goal and details. To change them, go to <strong>Profile &rarr; Nutrition targets</strong>:</p>
+    <ul>
+      <li><strong>Calculated</strong> — Feed Me does the maths from your stats and goal. Tap any stat to update it.</li>
+      <li><strong>Custom</strong> — set your own numbers if you&rsquo;ve been given specific guidance.</li>
+    </ul>
+    <p>Tap <strong>Save targets</strong> when you&rsquo;re done.</p>
+
+    <h3>Home-screen widgets</h3>
+    <p>Add a Feed Me widget to your phone&rsquo;s home screen for an at-a-glance look:</p>
+    <ul>
+      <li><strong>Today&rsquo;s Plate</strong> — your calorie ring and how much you have left.</li>
+      <li><strong>On the Menu</strong> — what&rsquo;s planned to eat today.</li>
+    </ul>
+
+    <hr />
+
+    <h2>Scan — log food &amp; add recipes fast</h2>
+    <p>The <strong>Scan</strong> tab (the middle button) gathers every quick action in one place.</p>
+
+    <h3>Log what you ate</h3>
+    <ul>
+      <li><strong>Describe Meal</strong> — type your meal; pick a common food or tap <strong>Estimate with AI</strong>. The <em>Recent</em> and <em>Favourites</em> tabs let you re-log things in a tap.</li>
+      <li><strong>Scan Photo</strong> — <strong>Take photo</strong> or pick from <strong>Gallery</strong>; Feed Me estimates the nutrition. Edit the servings or numbers, then <strong>Log to today</strong>.</li>
+      <li><strong>Scan Barcode</strong> — point your camera at a product barcode. You&rsquo;ll see the product, its nutrition, and a health verdict against your targets.</li>
+    </ul>
+
+    <h3>Add a recipe</h3>
+    <ul>
+      <li><strong>Suggest a Recipe</strong> — tell Feed Me a <strong>Meal idea</strong> (e.g. &ldquo;a high-protein chicken rice bowl&rdquo;), or choose <strong>Use what I have</strong> and list your ingredients. Feed Me writes a full recipe you can save.</li>
+      <li><strong>Import Recipe</strong> — paste a link from a recipe website, TikTok, Instagram or Facebook, or paste the recipe text. Feed Me reads it (it can even listen to a cooking video) and pulls out the ingredients, steps, and nutrition.</li>
+      <li><strong>Create Recipe Manually</strong> — type your own recipe (title, servings, cook time, ingredients one per line, and the method).</li>
+    </ul>
+    <p class="tip"><strong>Tip:</strong> in TikTok, Instagram or your browser, tap <strong>Share</strong> and choose <strong>Feed Me</strong> — the recipe import starts automatically.</p>
+
+    <h3>Check products in-store</h3>
+    <ul>
+      <li><strong>Scan Product</strong> — scan a barcode while shopping to see its nutrition and a health verdict, without logging it.</li>
+      <li><strong>Scan History</strong> — everything you&rsquo;ve scanned in-store, ready to re-open.</li>
+    </ul>
+
+    <h3>Free vs Pro</h3>
+    <p>The camera, barcode, manual entry, planning, and shopping list are always free. The <strong>AI</strong> features come with a few free goes for everyone (5 each for AI calorie estimates, recipe imports, and recipe suggestions). After that they&rsquo;re part of <strong>Feed Me Pro</strong> — see below. AI estimates are a helpful guide, not medical advice, so always check labels if you have allergies.</p>
+
+    <hr />
+
+    <h2>Recipes &amp; cookbooks</h2>
+    <p>The <strong>Recipes</strong> tab has two parts:</p>
+    <ul>
+      <li><strong>Discover</strong> — a big library of recipes. Use the <strong>search</strong> (magnifying glass) to find something by name or ingredient, and the <strong>filter</strong> (sliders) to pick a category. If you set a dietary preference, Discover automatically shows recipes that fit.</li>
+      <li><strong>Cookbooks</strong> — your own saved recipes, organised into collections.</li>
+    </ul>
+    <p>Free members see a selection of the library; <strong>Pro</strong> unlocks all of it (locked recipes show a small padlock).</p>
+
+    <h3>Opening a recipe</h3>
+    <p>Tap any recipe to open it. You&rsquo;ll see a photo, the ingredients and the method (on two tabs), and the calories and macros. A few handy things:</p>
+    <ul>
+      <li><strong>Servings</strong> — tap <strong>+ / −</strong> to change how many you&rsquo;re cooking for; the ingredient amounts update automatically.</li>
+      <li><strong>Timer</strong> — tap the clock to start a cooking timer that keeps running as you scroll.</li>
+      <li><strong>Save</strong> — tap the bookmark to save a Discover recipe to your own collection.</li>
+      <li><strong>Add to my week</strong> — drop the recipe straight into your meal plan.</li>
+    </ul>
+
+    <h3>Your own recipes &amp; cookbooks</h3>
+    <ul>
+      <li><strong>Save</strong> recipes from Discover, <strong>import</strong> them from the web/social, <strong>ask AI</strong> to suggest them, or <strong>create</strong> your own — they all land in your Cookbooks.</li>
+      <li>Feed Me organises them automatically (e.g. <em>Social</em>, <em>AI Suggestions</em>, <em>My Recipes</em>, <em>Recently Added</em>), and you can make your own cookbooks too — tap <strong>+ New cookbook</strong>, then add recipes with the book icon on any recipe.</li>
+      <li>To <strong>edit</strong> one of your recipes, open it and tap the pencil. To <strong>delete</strong>, swipe a recipe in the list view and confirm.</li>
+    </ul>
+
+    <hr />
+
+    <h2>Plan — map out your week</h2>
+    <p>The <strong>Plan</strong> tab lays your week out by day, with <strong>Breakfast, Lunch, Dinner</strong> and <strong>Snack</strong> slots.</p>
+    <h3>Adding meals</h3>
+    <ol>
+      <li>Tap an empty slot (<strong>Pick a meal</strong>), or open any recipe and tap <strong>Add to my week</strong>.</li>
+      <li>Choose the <strong>day</strong> and the <strong>meal</strong> (a slot that&rsquo;s already filled shows a padlock).</li>
+      <li>Adjust servings first if you like — the totals update to match.</li>
+    </ol>
+    <p>Tap the day letters (<strong>M T W…</strong>) to jump between days; the chevrons at the top move between <strong>this week</strong> and <strong>next week</strong>. To remove a meal, <strong>swipe it</strong> and tap <strong>Remove</strong>. There&rsquo;s also a <strong>Meal prep</strong> section for batch-cook dishes you want ready for the week.</p>
+
+    <hr />
+
+    <h2>Shopping list</h2>
+    <p>Your shopping list builds itself from the meals you&rsquo;ve planned. Open it with the <strong>shopping-bag</strong> button on the Plan tab.</p>
+    <ul>
+      <li>It&rsquo;s grouped by aisle (Produce, Dairy, Proteins…), and <strong>identical ingredients are added together</strong> so you don&rsquo;t get duplicates.</li>
+      <li>Choose <strong>Day</strong>, <strong>Week</strong>, or <strong>Next week</strong> at the top to change what it covers.</li>
+      <li><strong>Tap an item</strong> to tick it off as you shop.</li>
+      <li>Type in the <strong>&ldquo;Add an item…&rdquo;</strong> box to add anything extra (like dish soap).</li>
+      <li><strong>Swipe</strong> an item to remove it.</li>
+      <li>Tap <strong>share</strong> to send or save the list as text.</li>
+    </ul>
+    <p>If you haven&rsquo;t planned any meals yet, the list will be empty — plan a few meals first, or just jot items in the box.</p>
+
+    <hr />
+
+    <h2>Make it yours — Profile &amp; settings</h2>
+    <p>Open the <strong>Profile</strong> tab to adjust anything:</p>
+    <ul>
+      <li><strong>About you</strong> — your name, date of birth, sex, height, weight, activity level, and goal. Changing these updates your targets.</li>
+      <li><strong>Units</strong> — metric or imperial, set separately for your body stats and for recipes.</li>
+      <li><strong>Dietary preference</strong> — None, Vegetarian, Vegan, or Pescatarian. Filters recipes and your shopping list.</li>
+      <li><strong>Notifications</strong> — gentle, optional reminders: tonight&rsquo;s meal, calorie check-in, morning weigh-in, weekly meal prep, and new featured recipes. Tap one to set its time, or switch it off.</li>
+      <li><strong>Appearance</strong> — switch between <strong>Light</strong> and <strong>Dark</strong>, choose a colour theme, and pick a font.</li>
+      <li><strong>Apple Health</strong> (iPhone) — sync your logged meals to Apple Health, and optionally add the calories you burn through exercise to your daily budget. You choose how much to add and whether to cap it.</li>
+      <li><strong>Export meals</strong> (Pro) — download your food diary as a PDF or spreadsheet.</li>
+      <li><strong>Sign out</strong> / <strong>Delete account</strong> — deleting is permanent and asks you to type a confirmation phrase first; it can&rsquo;t be undone.</li>
+    </ul>
+    <h3>Apple Health, a little more</h3>
+    <p>When you connect Apple Health, Feed Me <strong>writes</strong> the meals you log into the Health app, and can <strong>read</strong> your active energy and steps to keep your calorie ring accurate. You&rsquo;re always in control — turn it off any time in <strong>iOS Settings &rarr; Health &rarr; Data Access &amp; Devices</strong>.</p>
+
+    <hr />
+
+    <h2>Feed Me Pro</h2>
+    <p>Most of Feed Me is free forever — the planner, shopping list, tracker, themes, and reminders. <strong>Feed Me Pro</strong> adds:</p>
+    <ul>
+      <li>The <strong>full recipe library</strong></li>
+      <li><strong>Unlimited</strong> AI food scans (photo &amp; describe)</li>
+      <li><strong>Unlimited</strong> recipe imports (links, social, paste)</li>
+      <li><strong>Unlimited</strong> AI recipe suggestions</li>
+      <li><strong>Meal export</strong> (PDF/CSV)</li>
+    </ul>
+    <p>Everyone gets a few free goes at the AI features first; once those are used, you&rsquo;ll be invited to upgrade.</p>
+    <h3>Trial &amp; plans</h3>
+    <ul>
+      <li>A <strong>free trial</strong> lets you try every Pro feature with nothing charged today.</li>
+      <li>Choose <strong>Monthly</strong> or <strong>Annual</strong> — both unlock the same features; Annual is the better value per month.</li>
+      <li>Not ready? Tap <strong>Maybe later</strong> — you can upgrade any time from the Profile tab.</li>
+      <li>Already subscribed on another device? Tap <strong>Restore</strong> on the paywall.</li>
+      <li>Manage or cancel anytime via <strong>Profile &rarr; Manage subscription</strong> (this opens the App Store or Google Play, which handle billing).</li>
+    </ul>
+    <h3>Invite friends &amp; redeem codes</h3>
+    <ul>
+      <li><strong>Invite friends</strong> — paying Pro members can share a referral code. A friend who redeems it gets a <strong>7-day free Pro trial</strong>. You get a fresh code for the next friend.</li>
+      <li><strong>Redeem a code</strong> — got a code? Enter it under <strong>Profile &rarr; Redeem a code</strong> to start your own free Pro trial. One per account.</li>
+    </ul>
+
+    <hr />
+
+    <h2>Tips &amp; common questions</h2>
+    <ul>
+      <li><strong>New to tracking?</strong> Just log a meal or two a day to start — it gets quicker as the app learns your favourites.</li>
+      <li><strong>Made a mistake?</strong> Open the day from Today and remove the entry; swipe to remove planned meals or shopping items.</li>
+      <li><strong>Offline?</strong> You can still browse what&rsquo;s loaded; changes sync when you&rsquo;re back online.</li>
+      <li><strong>AI looks off?</strong> It&rsquo;s an estimate — tap to adjust the numbers before you log, and always check packaging for allergens.</li>
+      <li><strong>Need a hand?</strong> Email us any time at <a href="mailto:support@envyapplications.com">support@envyapplications.com</a> — we read every message.</li>
+    </ul>
+    <p>Happy cooking 🍲</p>
+  </main>
+</body>
+</html>
