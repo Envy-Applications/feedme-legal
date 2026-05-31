@@ -6,16 +6,23 @@
   <meta name="robots" content="index, follow" />
   <meta name="description" content="Privacy Policy for the Feed Me mobile app." />
   <title>Privacy Policy — Feed Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --parchment: #fbf3e2;
-      --cream: #fceed7;
-      --ink: #2a1f18;
-      --ink-soft: #5a4a3d;
-      --muted: #8a7e6e;
-      --saffron: #c9881d;
-      --border: #e2d2b8;
-      --border-soft: #efe3cc;
+      --parchment: #F5EDD9;
+      --cream: #FBF5E4;
+      --elevated: #F4E2C0;
+      --ink: #1F1A14;
+      --ink-soft: #5A4A3D;
+      --muted: #8A7E6E;
+      --terracotta: #C4785A;
+      --terracotta-deep: #8B4524;
+      --terracotta-glow: rgba(196, 120, 90, 0.22);
+      --sage: #8A9E7A;
+      --border: #E2D2B8;
+      --border-soft: #EFE3CC;
     }
 
     * { box-sizing: border-box; }
@@ -25,7 +32,7 @@
       padding: 0;
       background: var(--parchment);
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 17px;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -45,19 +52,23 @@
     }
 
     h1 {
-      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-      font-weight: 700;
-      font-size: 36px;
+      font-family: "Lora", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 38px;
       line-height: 1.15;
       margin: 0 0 12px;
       color: var(--ink);
       letter-spacing: -0.01em;
     }
 
+    h1::after { content: "."; color: var(--terracotta); }
+
     h2 {
-      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-      font-weight: 700;
-      font-size: 24px;
+      font-family: "Lora", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 25px;
       line-height: 1.25;
       margin: 48px 0 12px;
       color: var(--ink);
@@ -71,45 +82,37 @@
       color: var(--ink);
     }
 
-    p, li {
-      color: var(--ink-soft);
-    }
-
+    p, li { color: var(--ink-soft); }
     p { margin: 0 0 16px; }
 
-    .meta {
-      color: var(--muted);
-      font-size: 14px;
-      margin: 0;
-    }
+    .lead { font-size: 18px; color: var(--ink-soft); }
 
-    .meta strong {
-      color: var(--ink-soft);
-      font-weight: 600;
-    }
+    .meta { color: var(--muted); font-size: 14px; margin: 0; }
+    .meta strong { color: var(--ink-soft); font-weight: 600; }
 
     a {
-      color: var(--saffron);
+      color: var(--terracotta);
       text-decoration: underline;
       text-decoration-thickness: 1px;
       text-underline-offset: 2px;
     }
-
     a:hover { text-decoration-thickness: 2px; }
 
     strong { color: var(--ink); font-weight: 600; }
 
-    ul, ol {
-      padding-left: 22px;
-      margin: 0 0 16px;
-    }
-
+    ul, ol { padding-left: 22px; margin: 0 0 16px; }
     li { margin-bottom: 6px; }
 
-    hr {
-      border: 0;
-      border-top: 1px solid var(--border-soft);
-      margin: 40px 0;
+    hr { border: 0; border-top: 1px solid var(--border-soft); margin: 40px 0; }
+
+    .tip {
+      background: var(--cream);
+      border: 1px solid var(--border-soft);
+      border-left: 3px solid var(--terracotta);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 16px 0 24px;
+      font-size: 16px;
     }
 
     table {
@@ -121,41 +124,42 @@
       overflow: hidden;
       font-size: 15px;
     }
-
     th, td {
       padding: 12px 14px;
       text-align: left;
       border-bottom: 1px solid var(--border-soft);
       vertical-align: top;
     }
-
     th {
-      background: var(--cream);
+      background: var(--elevated);
       color: var(--ink);
       font-weight: 600;
       border-bottom: 1px solid var(--border);
     }
-
     tr:last-child td { border-bottom: 0; }
 
     @media (max-width: 600px) {
       main { padding: 32px 18px 64px; }
-      h1 { font-size: 28px; }
-      h2 { font-size: 21px; }
+      h1 { font-size: 30px; }
+      h2 { font-size: 22px; }
       table { font-size: 14px; }
       th, td { padding: 10px 12px; }
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --parchment: #1a1410;
-        --cream: #241b16;
-        --ink: #f5edd9;
-        --ink-soft: #d8c9b0;
-        --muted: #8a7e6e;
-        --saffron: #e8a33d;
-        --border: #3a302a;
-        --border-soft: #2a221c;
+        --parchment: #1A1410;
+        --cream: #241B16;
+        --elevated: #2E2520;
+        --ink: #F5EDD9;
+        --ink-soft: #D8C9B0;
+        --muted: #8A7E6E;
+        --terracotta: #D88662;
+        --terracotta-deep: #A66145;
+        --terracotta-glow: rgba(216, 134, 98, 0.35);
+        --sage: #9CB089;
+        --border: #3A302A;
+        --border-soft: #2A221C;
       }
     }
   </style>
