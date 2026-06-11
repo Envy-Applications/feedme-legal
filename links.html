@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Shop, follow, and stay in the loop with Feed Me." />
+  <meta name="theme-color" content="#F5EDD9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1A1410" media="(prefers-color-scheme: dark)" />
+  <title>feed me — links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Lora:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet" />
+  <style>
+    /* Light — warm parchment (Feed Me default). Token names mirror constants/theme.ts. */
+    :root {
+      --parchment: #F5EDD9;
+      --cream: #FBF5E4;
+      --elevated: #F4E2C0;
+      --ink: #1F1A14;
+      --ink-soft: #5A4A3D;
+      --muted: #8A7E6E;
+      --terracotta: #C4785A;
+      --terracotta-glow: rgba(196, 120, 90, 0.22);
+      --sage: #8A9E7A;
+      --border: #E2D2B8;
+      --border-soft: #EFE3CC;
+    }
+
+    /* Dark — warm espresso. */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --parchment: #1A1410;
+        --cream: #241B16;
+        --elevated: #2E2520;
+        --ink: #F5EDD9;
+        --ink-soft: #D8C9B0;
+        --muted: #8A7E6E;
+        --terracotta: #D88662;
+        --terracotta-glow: rgba(216, 134, 98, 0.35);
+        --sage: #9CB089;
+        --border: #3A302A;
+        --border-soft: #2A221C;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      /* Warm ambient terracotta glow at the top, fading into parchment. */
+      background:
+        radial-gradient(70% 42% at 50% -4%, var(--terracotta-glow), transparent 70%),
+        var(--parchment);
+      color: var(--ink);
+      font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Tileable paper-grain overlay — the brand's <Grain /> motif, self-contained (no external request). */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.05;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 160px 160px;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 520px;
+      width: 100%;
+      padding: 56px 24px;
+      text-align: center;
+    }
+
+    /* "feed me." wordmark — lowercase Lora italic with a terracotta full stop. */
+    h1.wordmark {
+      font-family: "Lora", Georgia, "Times New Roman", serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 1.05;
+      margin: 0 0 10px;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    h1.wordmark .period {
+      color: var(--terracotta);
+      font-style: normal;
+    }
+
+    p.tagline {
+      color: var(--muted);
+      margin: 0 0 40px;
+      font-size: 15px;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr;
+    }
+
+    a.card, span.card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 18px;
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1), border-color 140ms ease, background 140ms ease, box-shadow 140ms ease;
+    }
+
+    a.card:hover {
+      transform: translateY(-2px);
+      border-color: var(--terracotta);
+      background: var(--cream);
+      box-shadow: 0 12px 28px -16px var(--terracotta-glow), 0 2px 8px -4px rgba(0, 0, 0, 0.18);
+    }
+
+    a.card:active { transform: translateY(0) scale(0.99); }
+
+    /* Icon chip — mirrors the in-app SettingRow icon (terracotta on a glowing rounded square). */
+    .card .glyph {
+      flex: 0 0 auto;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--terracotta-glow);
+      border: 1px solid var(--terracotta);
+      color: var(--terracotta);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card .glyph svg { width: 20px; height: 20px; display: block; }
+
+    .card-text { flex: 1 1 auto; text-align: left; min-width: 0; }
+
+    .card .label {
+      display: block;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: var(--ink);
+    }
+
+    .card .desc {
+      display: block;
+      margin-top: 2px;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    /* Inert "coming soon" destinations — present but not yet clickable. */
+    .card.soon {
+      cursor: default;
+      opacity: 0.78;
+      background: var(--parchment);
+    }
+
+    .card.soon:hover {
+      transform: none;
+      border-color: var(--border);
+      box-shadow: none;
+    }
+
+    .card.soon .glyph {
+      background: var(--border-soft);
+      border-color: var(--border);
+      color: var(--muted);
+    }
+
+    .pill {
+      flex: 0 0 auto;
+      font-family: "DM Sans", sans-serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      background: var(--terracotta-glow);
+      border: 1px solid var(--terracotta);
+      border-radius: 999px;
+      padding: 4px 10px;
+      white-space: nowrap;
+    }
+
+    footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--terracotta); text-decoration: none; font-weight: 500; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="wordmark">feed me<span class="period">.</span></h1>
+    <p class="tagline">Shop, follow, and stay in the loop.</p>
+
+    <div class="card-grid">
+      <a class="card" href="https://www.instagram.com/the_feed_me_app/" target="_blank" rel="noopener noreferrer">
+        <span class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="2" width="20" height="20" rx="5.5" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2" />
+            <circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="card-text">
+          <span class="label">Instagram</span>
+          <span class="desc">Recipes, behind the scenes &amp; more</span>
+        </span>
+      </a>
+
+      <a class="card" href="https://www.tiktok.com/@thefeedmeapp" target="_blank" rel="noopener noreferrer">
+        <span class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M14 3c.3 2.3 1.8 4.05 4 4.25v2.6c-1.5 0-2.9-.5-4-1.3v5.7A5.2 5.2 0 1 1 8.8 9.1c.3 0 .6.02.9.07v2.66a2.6 2.6 0 1 0 1.8 2.47V3H14z" />
+          </svg>
+        </span>
+        <span class="card-text">
+          <span class="label">TikTok</span>
+          <span class="desc">Quick meal-prep videos</span>
+        </span>
+      </a>
+
+      <a class="card" href="https://www.youtube.com/@TheFeedMeApp" target="_blank" rel="noopener noreferrer">
+        <span class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M22.5 8.2a2.7 2.7 0 0 0-1.9-1.9C18.9 6 12 6 12 6s-6.9 0-8.6.3A2.7 2.7 0 0 0 1.5 8.2 28 28 0 0 0 1.2 12a28 28 0 0 0 .3 3.8 2.7 2.7 0 0 0 1.9 1.9C5.1 18 12 18 12 18s6.9 0 8.6-.3a2.7 2.7 0 0 0 1.9-1.9 28 28 0 0 0 .3-3.8 28 28 0 0 0-.3-3.8zM10 15V9l5.2 3L10 15z" />
+          </svg>
+        </span>
+        <span class="card-text">
+          <span class="label">YouTube</span>
+          <span class="desc">Full recipe walk-throughs</span>
+        </span>
+      </a>
+
+      <!-- Facebook page is pending. Swap this <span> for an <a href="…"> and drop class="soon" + the pill when it's live. -->
+      <span class="card soon">
+        <span class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M14 8.5V7c0-.85.2-1.25 1.3-1.25H17V3h-2.5C11.8 3 11 4.4 11 6.7v1.8H9V12h2v9h3v-9h2.3l.4-3.5H14z" />
+          </svg>
+        </span>
+        <span class="card-text">
+          <span class="label">Facebook</span>
+          <span class="desc">Join the community</span>
+        </span>
+        <span class="pill">Coming soon</span>
+      </span>
+
+      <!-- Coming soon: swap this <span> for an <a href="…"> and drop class="soon" + the pill when the store launches. -->
+      <span class="card soon">
+        <span class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 0 1-8 0" />
+          </svg>
+        </span>
+        <span class="card-text">
+          <span class="label">Shop</span>
+          <span class="desc">Our store, opening soon</span>
+        </span>
+        <span class="pill">Coming soon</span>
+      </span>
+
+      <!-- Coming soon: swap this <span> for an <a href="…"> and drop class="soon" + the pill when the website launches. -->
+      <span class="card soon">
+        <span class="glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+        </span>
+        <span class="card-text">
+          <span class="label">Website</span>
+          <span class="desc">Launching soon</span>
+        </span>
+        <span class="pill">Coming soon</span>
+      </span>
+    </div>
+
+    <footer>
+      Questions? <a href="mailto:support@envyapplications.com">support@envyapplications.com</a>
+    </footer>
+  </main>
+</body>
+</html>
