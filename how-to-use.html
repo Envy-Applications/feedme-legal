@@ -112,6 +112,36 @@
       font-size: 16px;
     }
 
+    /* Photo tour — framed app screenshots woven into the relevant sections. */
+    .shots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 8px 0 28px;
+    }
+    figure.shot {
+      margin: 0;
+      flex: 0 1 210px;
+      max-width: 210px;
+      text-align: center;
+    }
+    figure.shot img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--cream);
+      box-shadow: 0 8px 24px rgba(31, 35, 32, 0.10);
+    }
+    figure.shot figcaption {
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--muted);
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -158,6 +188,7 @@
         --border: #343836;
         --border-soft: #2A2D2C;
       }
+      figure.shot img { box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45); }
     }
   </style>
 </head>
@@ -231,6 +262,16 @@
 
     <h2>Scan — log food &amp; add recipes fast</h2>
     <p>The <strong>Scan</strong> tab (the middle button) gathers every quick action in one place.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="img/tour/tour-scan.jpg" alt="Calorie scan results for a photographed plate" loading="lazy" />
+        <figcaption>Snap your plate and we estimate the calories and macros.</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/tour/tour-barcode.jpg" alt="Product details with a Nutri-Score and health verdict after scanning a barcode" loading="lazy" />
+        <figcaption>Scan a barcode for its Nutri-Score, additives, and a health verdict.</figcaption>
+      </figure>
+    </div>
 
     <h3>Log what you ate</h3>
     <ul>
@@ -281,11 +322,27 @@
       <li>Feed Me organises them automatically (e.g. <em>Social</em>, <em>AI Suggestions</em>, <em>My Recipes</em>, <em>Recently Added</em>), and you can make your own cookbooks too — tap <strong>+ New cookbook</strong>, then add recipes with the book icon on any recipe.</li>
       <li>To <strong>edit</strong> one of your recipes, open it and tap the pencil. To <strong>delete</strong>, swipe a recipe in the list view and confirm.</li>
     </ul>
+    <div class="shots">
+      <figure class="shot">
+        <img src="img/tour/tour-import-paste.jpg" alt="Pasting a recipe link to import it into Feed Me" loading="lazy" />
+        <figcaption>Paste a link, or share from TikTok, Instagram or the web…</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/tour/tour-import-result.jpg" alt="An imported recipe with its ingredients, steps and nutrition" loading="lazy" />
+        <figcaption>…and we pull out the ingredients, steps, and nutrition.</figcaption>
+      </figure>
+    </div>
 
     <hr />
 
     <h2>Plan — map out your week</h2>
     <p>The <strong>Plan</strong> tab lays your week out by day, with <strong>Breakfast, Lunch, Dinner</strong> and <strong>Snack</strong> slots.</p>
+    <div class="shots">
+      <figure class="shot">
+        <img src="img/tour/tour-plan.jpg" alt="The weekly planner with recipes dropped into each day" loading="lazy" />
+        <figcaption>Drag recipes into days — servings scale and ingredients merge.</figcaption>
+      </figure>
+    </div>
     <h3>Adding meals</h3>
     <ol>
       <li>Tap an empty slot (<strong>Pick a meal</strong>), or open any recipe and tap <strong>Add to my week</strong>.</li>
