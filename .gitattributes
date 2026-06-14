@@ -1,0 +1,4 @@
+# Normalize line endings so Windows authoring (CRLF) never drifts the repo.
+*.html text eol=lf
+*.md   text eol=lf
+*.css  text eol=lf
