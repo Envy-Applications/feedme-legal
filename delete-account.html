@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="How to delete your Feed Me account and associated data." />
+  <title>Delete your account — Feed Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --parchment: #FCFCFB;
+      --cream: #F4F4F2;
+      --elevated: #ECECE9;
+      --ink: #1F2320;
+      --ink-soft: #4A4F4C;
+      --muted: #898E8B;
+      --terracotta: #B06A4F;
+      --terracotta-deep: #8B4524;
+      --terracotta-glow: rgba(176, 106, 79, 0.12);
+      --sage: #8A9E7A;
+      --border: #E6E6E2;
+      --border-soft: #F0F0EC;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--parchment);
+      color: var(--ink);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+
+    header.doc-head {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 0 0 12px;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 23px;
+      line-height: 1.3;
+      margin: 48px 0 12px;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 28px 0 8px;
+      color: var(--ink);
+    }
+
+    p, li { color: var(--ink-soft); }
+    p { margin: 0 0 16px; }
+
+    .lead { font-size: 18px; color: var(--ink-soft); }
+
+    .meta { color: var(--muted); font-size: 14px; margin: 0; }
+    .meta strong { color: var(--ink-soft); font-weight: 600; }
+
+    a {
+      color: var(--terracotta);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+    a:hover { text-decoration-thickness: 2px; }
+
+    strong { color: var(--ink); font-weight: 600; }
+
+    ul, ol { padding-left: 22px; margin: 0 0 16px; }
+    li { margin-bottom: 6px; }
+
+    ol.steps { counter-reset: step; list-style: none; padding-left: 0; }
+    ol.steps > li {
+      position: relative;
+      padding: 2px 0 2px 44px;
+      margin-bottom: 14px;
+      min-height: 30px;
+    }
+    ol.steps > li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--terracotta-glow);
+      border: 1px solid var(--terracotta);
+      color: var(--terracotta-deep);
+      font-weight: 700;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    hr { border: 0; border-top: 1px solid var(--border-soft); margin: 40px 0; }
+
+    .tip {
+      background: var(--cream);
+      border: 1px solid var(--border-soft);
+      border-left: 3px solid var(--terracotta);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 16px 0 24px;
+      font-size: 16px;
+    }
+    .tip p:last-child { margin-bottom: 0; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      background: var(--cream);
+      border-radius: 12px;
+      overflow: hidden;
+      font-size: 15px;
+    }
+    th, td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-soft);
+      vertical-align: top;
+    }
+    th {
+      background: var(--elevated);
+      color: var(--ink);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+    }
+    tr:last-child td { border-bottom: 0; }
+
+    @media (max-width: 600px) {
+      main { padding: 32px 18px 64px; }
+      h1 { font-size: 28px; }
+      h2 { font-size: 21px; }
+      table { font-size: 14px; }
+      th, td { padding: 10px 12px; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --parchment: #1C1E1D;
+        --cream: #262928;
+        --elevated: #303432;
+        --ink: #ECECEA;
+        --ink-soft: #C4C7C4;
+        --muted: #8B908D;
+        --terracotta: #CC8E72;
+        --terracotta-deep: #A66145;
+        --terracotta-glow: rgba(204, 142, 114, 0.16);
+        --sage: #9CB089;
+        --border: #343836;
+        --border-soft: #2A2D2C;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="doc-head">
+      <h1>Delete your account &amp; data</h1>
+      <p class="meta"><strong>App:</strong> Feed Me (Envy Applications, ABN 95 927 268 876)</p>
+      <p class="meta"><strong>Last updated:</strong> 16 June 2026</p>
+    </header>
+
+    <p class="lead">You can permanently delete your Feed Me account and all of the personal data associated with it at any time. This page explains how, what gets removed, and what is kept.</p>
+
+    <h2>Option 1 — Delete from inside the app (fastest)</h2>
+    <p>If you still have Feed Me installed and can sign in, this removes your account immediately:</p>
+    <ol class="steps">
+      <li>Open Feed Me and sign in to the account you want to delete.</li>
+      <li>Go to the <strong>Profile</strong> tab.</li>
+      <li>Tap <strong>Settings</strong>, then <strong>Delete account</strong>.</li>
+      <li>Confirm by typing <strong>DELETE</strong> when prompted, and re-authenticate if asked.</li>
+    </ol>
+    <p>Your account and data are deleted right away &mdash; there is no waiting period to reconsider, so only do this if you are sure.</p>
+
+    <h2>Option 2 — Request deletion by email</h2>
+    <p>If you have uninstalled the app, can&rsquo;t sign in, or would simply prefer we do it for you, email us and we will delete your account for you:</p>
+    <div class="tip">
+      <p style="margin:0;"><strong>Email:</strong> <a href="mailto:support@envyapplications.com?subject=Delete%20my%20Feed%20Me%20account">support@envyapplications.com</a></p>
+      <p style="margin:8px 0 0;">Use the subject line <strong>&ldquo;Delete my Feed Me account&rdquo;</strong> and send it from the email address on your account (or tell us the email you signed up with) so we can verify the request.</p>
+    </div>
+    <p>We will verify ownership of the account, complete the deletion, and confirm by reply. We respond to deletion requests within <strong>30 days</strong>, and usually much sooner.</p>
+
+    <h2>What gets deleted</h2>
+    <p>Deleting your account permanently removes the data we hold about you, including:</p>
+    <ul>
+      <li>Your account and sign-in record (email, display name, Firebase authentication)</li>
+      <li>Your profile and preferences (nutrition targets, body metrics, goals, settings)</li>
+      <li>Your recipes and any recipe photos you uploaded</li>
+      <li>Your weekly meal plans and shopping lists</li>
+      <li>Your nutrition log, meal history, and weight log</li>
+      <li>Your saved cookbooks and scanned-product history</li>
+      <li>Your referral codes and subscription entitlement record</li>
+    </ul>
+
+    <h2>What is kept, and for how long</h2>
+    <p>A small amount of data is retained where we are legally or operationally required to keep it. None of it is used to re-create your account:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Why it&rsquo;s kept</th>
+          <th>Retention</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Encrypted backups</td>
+          <td>Disaster recovery</td>
+          <td>Purged as backups rotate, within 30 days</td>
+        </tr>
+        <tr>
+          <td>Crash / error reports</td>
+          <td>App stability (PII-scrubbed)</td>
+          <td>Up to 90 days</td>
+        </tr>
+        <tr>
+          <td>Subscription / purchase records</td>
+          <td>Held by Apple, Google &amp; RevenueCat for billing, tax, and refunds</td>
+          <td>Per their own retention rules &mdash; we don&rsquo;t control this</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tip">
+      <p><strong>Heads up about subscriptions:</strong> deleting your Feed Me account does <strong>not</strong> cancel an active subscription. Manage or cancel Feed Me Pro in your <strong>Google Play</strong> (Play Store &rarr; Subscriptions) or <strong>App Store</strong> (Settings &rarr; your name &rarr; Subscriptions) account before deleting, otherwise billing may continue through the store.</p>
+    </div>
+
+    <h2>Questions</h2>
+    <p>
+      Envy Applications (ABN 95 927 268 876)<br />
+      Western Australia, Australia<br />
+      Email: <a href="mailto:support@envyapplications.com">support@envyapplications.com</a>
+    </p>
+    <p class="meta">See also our <a href="./privacy.html">Privacy Policy</a>.</p>
+  </main>
+</body>
+</html>
