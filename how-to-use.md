@@ -130,10 +130,12 @@ The **Scan** tab (the middle button) gathers every quick action in one place.
 ### A note on free vs Pro
 
 The camera, barcode, manual entry, planning, and shopping list are always free.
-The **AI** features come with a few free goes for everyone (5 each for AI calorie
-estimates, recipe imports, and recipe suggestions). After that they're part of
-**Feed Me Pro** — see *Feed Me Pro* below. AI estimates are a helpful guide, not
-medical advice, so always check labels if you have allergies.
+The **AI** features come with a free weekly allowance for everyone that resets
+every Monday — **5 photo scans, 5 "Describe Meal" estimates, 3 recipe imports**
+(shared across links, social, and screenshots) and **2 AI suggestions** each week.
+After that they're part of **Feed Me Pro** — see *Feed Me Pro* below. You'll need
+to be signed in to a Feed Me account to use the AI features. AI estimates are a
+helpful guide, not medical advice, so always check labels if you have allergies.
 
 ---
 
@@ -260,8 +262,9 @@ reminders. **Feed Me Pro** adds:
 - **Unlimited** AI recipe suggestions
 - **Meal export** (PDF/CSV)
 
-Everyone gets a few free goes at the AI features first; once those are used, you'll
-be invited to upgrade.
+Everyone gets a free weekly allowance of the AI features that resets every Monday;
+once you've used the week's allowance, you'll be invited to upgrade (or you can
+wait for the reset).
 
 ### Trial & plans
 

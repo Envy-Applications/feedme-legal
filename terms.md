@@ -1,7 +1,7 @@
 # Terms of Service
 
 **Effective date:** 2 May 2026
-**Last updated:** 31 May 2026
+**Last updated:** 29 June 2026
 
 These Terms of Service ("Terms") govern your use of the Feed Me mobile
 application ("the App") published by Envy Applications (ABN 95 927 268 876),
@@ -82,6 +82,14 @@ them. You can request a refund through your store account. Cancelling a
 subscription stops future renewals but does not, by itself, refund the period
 you are already in; your Pro access continues until that paid period ends.
 
+### f. Fair use of AI features
+
+Where a plan describes AI features (calorie scanning, recipe import, or recipe
+suggestions) as "unlimited", that means unlimited for ordinary personal use. To
+keep the service available and affordable for everyone, we apply reasonable
+fair-use limits to prevent automated, bulk, or abusive use. We will only restrict
+genuinely excessive use, and we will be reasonable about it.
+
 ---
 
 ## 4. Your content
@@ -122,11 +130,19 @@ We may suspend or terminate accounts that violate this section.
 
 ## 6. AI features and dietary information
 
-Feed Me uses artificial intelligence (Anthropic's Claude API) for:
+Feed Me uses artificial intelligence for:
 
-- **Calorie scanning** — estimating calories and macros from photos
-- **Recipe importing** — extracting structured recipe data from a URL or
-  pasted text
+- **Calorie scanning** — estimating calories and macros from a photo or a text
+  description of your meal
+- **Recipe importing** — extracting a structured recipe from a link, pasted text,
+  or a screenshot
+- **Recipe suggestions** — generating a recipe from an idea or the ingredients you
+  have
+
+These features are powered by Anthropic's Claude API. When you import a recipe
+from a video or social post, we may also use Google's Gemini (via Google Cloud) to
+transcribe a public cooking video, and a speech-to-text provider to transcribe a
+post's audio. See section 7 and our Privacy Policy for the full list of providers.
 
 These features are **estimates and aids, not professional advice**. AI output
 can be inaccurate. Specifically:
@@ -146,14 +162,17 @@ You use AI features at your own risk and judgment.
 
 ## 7. Third-party services
 
-The App relies on services from Google (Firebase), Anthropic, RevenueCat,
-Apple, and Google Play. Their terms apply when you use those parts of the
-App. We are not responsible for failures, outages, or changes in those
-third-party services.
+The App relies on services from Google (Firebase, and Google Cloud / Gemini for
+video transcription), Anthropic, RevenueCat, Apple, Google Play, Open Food Facts
+(barcode data), Expo (push delivery), Sentry (diagnostics), and — for some social
+imports — a speech-to-text provider and a media-resolution provider. Their terms
+apply when you use those parts of the App, and we are not responsible for
+failures, outages, or changes in those third-party services.
 
-When you import a recipe from a third-party website, your use of that site's
-content is between you and that site. Respect the source's terms and
-copyright.
+When you import a recipe from a third-party source — a website, YouTube, TikTok,
+Instagram, or Facebook — your use of that content is between you and the source.
+You are responsible for having the right to import it, and for complying with the
+source platform's own terms and copyright.
 
 ---
 

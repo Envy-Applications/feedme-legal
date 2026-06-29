@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective date:** 2 May 2026
-**Last updated:** 31 May 2026
+**Last updated:** 29 June 2026
 
 This Privacy Policy describes how Envy Applications (ABN 95 927 268 876)
 ("we", "us", "our") handles personal information when you use the Feed Me
@@ -43,11 +43,15 @@ private relay address. We never receive your real email in that case.
 
 To personalise the experience you may provide:
 
-- Household size, cooking goal, weekly cook hours, weekly food spend, currency
+- Your name and date of birth (to personalise the app and calculate your targets)
 - Body metrics for nutrition targets (weight, height, age, sex, activity level)
+- Your goal (lose, maintain, or gain weight), the amount, and the pace
+- Dietary preference (for example vegetarian, vegan, or pescatarian) and any
+  ingredients you choose to avoid (such as gluten or dairy)
 - Units preference (metric or imperial)
 - Daily nutrition targets (calories, protein, carbs, fat)
-- Theme preference (light or dark)
+- Appearance preferences (light or dark mode, colour theme, font)
+- Whether you have used other meal or nutrition apps before (to tailor onboarding)
 
 These are stored under your account so they persist across devices.
 
@@ -63,8 +67,9 @@ These are stored under your account so they persist across devices.
 If you take a photo to scan calories or upload a recipe image, that photo is:
 
 1. Resized and compressed on-device,
-2. Sent to Anthropic's API for analysis (calorie scanning) or stored in Firebase
-   Storage under your account (recipe images), and
+2. Sent to our AI provider for analysis (calorie scanning, or reading a recipe
+   from a screenshot you import) or stored in Firebase Storage under your account
+   (recipe images), and
 3. Linked to your account so the data appears on your devices.
 
 We never access your photo library in the background. You explicitly pick or
@@ -91,10 +96,18 @@ includes:
 We do **not** capture your inputs, screen contents, or images in crash reports.
 You can request deletion of your error reports by emailing us.
 
-### g. Local notifications
+### g. Notifications
 
-If you enable meal reminders we schedule notifications **on your device only**.
-We do not run a push server and we do not collect a push token.
+If you enable meal and activity reminders, we schedule those **on your device
+only** — they do not involve our servers.
+
+Separately, if you opt in to **Announcements & offers** (off by default, under
+Settings → Notifications), we capture your device's push notification token once
+you have granted notification permission, so we can send you occasional product
+news and offers. These announcements are delivered through the **Expo push
+notification service**, which relays them to Apple's and Google's push networks.
+You can switch announcements off at any time in Settings → Notifications, and your
+push token is removed when you delete your account.
 
 ### h. Apple Health (HealthKit) — iOS only
 
@@ -112,6 +125,18 @@ third party, used for advertising or marketing, or sold. You can revoke Feed
 Me's Health access at any time in **iOS Settings → Health → Data Access &
 Devices**, or turn the connection off inside the app (Settings → Apple Health).
 
+### i. Sensitive and health information
+
+Some of the data above is **sensitive information** (also called special-category
+data in the UK and EU): your body metrics and weight log, your nutrition targets,
+your dietary preference (which can reveal a philosophical or religious belief),
+and the ingredients you choose to avoid (which can imply an allergy or medical
+condition). We collect this only with your consent — you provide it during
+onboarding or in Settings, and you can edit or remove it at any time. We use it
+**only** to run the App for you (calculating targets, filtering recipes and
+shopping lists). We never use it for advertising or marketing, and we never sell
+it. Apple Health data is handled separately and stays on your device (see 2h).
+
 ---
 
 ## 3. How we use your information
@@ -121,12 +146,16 @@ We use the data above to:
 - Authenticate you and keep your account secure
 - Sync your recipes, plans, lists, and preferences across your devices
 - Personalise nutrition targets, defaults, and recommendations
-- Process calorie scans and recipe imports via the Anthropic API
+- Process calorie scans, recipe imports, and recipe suggestions through our AI
+  providers (see section 4)
 - Manage your subscription status
+- Send optional product announcements and offers — **only if you opt in** (see
+  section 2g)
 - Diagnose crashes and improve stability
 
-We do **not** use your data for advertising, profiling, or sale to third
-parties.
+We do **not** sell your data, run third-party advertising or ad-tracking SDKs, or
+build advertising profiles about you. The only marketing we do is our own product
+announcements, which we send solely to people who have opted in.
 
 ---
 
@@ -137,28 +166,45 @@ We share data only with the service providers required to run the App:
 | Provider                | Purpose                              | Data shared                                         |
 | ----------------------- | ------------------------------------ | --------------------------------------------------- |
 | Google (Firebase)       | Authentication, database, storage    | Account info, app content, photos                   |
-| Anthropic, PBC          | Calorie scanning and recipe import   | The image or text you submit for that single scan   |
+| Anthropic, PBC          | AI calorie scanning, recipe import, and recipe suggestions | The image or text you submit for that request |
+| Google Cloud (Vertex AI / Gemini) | Transcribing a public cooking video when you import a recipe from a video link | The video link you choose to import |
+| A speech-to-text provider | Transcribing the audio of a social post you import (when this feature is enabled) | The media from the post you choose to import |
+| A media-resolution provider | Turning a social-post link into its media and caption for import (when this feature is enabled) | The post link you choose to import |
+| Social platforms (TikTok, YouTube, Meta) | Retrieving a post's public caption, title, and thumbnail when you import from them | The post link you choose to import |
+| Open Food Facts (France) | Looking up a product when you scan a barcode | The barcode you scan |
 | RevenueCat, Inc.        | Subscription management              | Anonymised user ID, purchase events                 |
 | Apple App Store / Google Play | Subscription billing            | Handled directly by Apple or Google                 |
+| Expo                    | Delivering opt-in announcements      | Your push token and the announcement content        |
 | Sentry (Functional Software, Inc.) | Crash and error reporting | Anonymised user ID, error metadata                  |
 
 Each provider processes data under their own privacy policy and is contractually
-bound to use it only to provide the service to us.
+bound to use it only to provide the service to us. Several of the AI and
+social-import providers above are used only for the relevant import method, and
+some only when that feature is switched on.
 
-We do not sell, rent, or trade personal data with anyone else.
+We do not sell, rent, or trade personal data with anyone else. For the purposes of
+the California Consumer Privacy Act (CCPA/CPRA), we do **not** "sell" or "share"
+your personal information; the providers listed above act as our service providers
+under contract and may use your data only to perform services for us.
 
 ---
 
 ## 5. Where data is stored and overseas disclosure
 
-- Firebase: data is stored on Google Cloud servers, primarily in United States
-  regions selected for performance.
-- Anthropic: scan and import requests are processed in the United States. Per
-  Anthropic's API policy, your inputs are not used to train their models.
-- RevenueCat and Sentry: United States.
+- Firebase and Google Cloud (Vertex AI / Gemini): processed on Google servers,
+  primarily in United States regions selected for performance.
+- Anthropic: scan, import, and suggestion requests are processed in the United
+  States. Per Anthropic's API policy, your inputs are not used to train their
+  models.
+- RevenueCat, Sentry, Expo, and (when enabled) our speech-to-text and
+  media-resolution providers: United States.
+- Open Food Facts: France (European Union).
+- Social platforms (TikTok, YouTube, Meta): processed in the relevant platform's
+  own regions when you import a recipe from them.
 
-Because our service providers are based in the United States, your personal
-information is disclosed overseas. Under Australian Privacy Principle 8 we
+Because most of our service providers are based in the United States (and one,
+Open Food Facts, in the European Union), your personal information is disclosed
+overseas. Under Australian Privacy Principle 8 we
 take reasonable steps to ensure these overseas recipients handle your
 personal information in line with the APPs. Each provider is contractually
 bound to use the data only to provide the service to us.
@@ -172,16 +218,24 @@ required.
 
 ## 6. How long we keep data
 
-- Account and app content: kept for as long as your account exists.
+- Account and app content (your recipes, meal plans, nutrition and weight logs,
+  meal history, and scanned-product history): kept for as long as your account
+  exists, and removed when you delete it.
 - Subscription records: kept by Apple, Google, and RevenueCat per their own
   retention rules.
 - Crash reports: retained for up to 90 days unless required for an active
   investigation.
+- Diagnostic logs from our cloud functions (which may briefly record a link you
+  asked us to import): kept on Google Cloud for a short period for security and
+  debugging.
+- Your push token: kept while announcements are enabled, and removed when you opt
+  out or delete your account.
 
-When you delete your account from inside the app (Settings → Delete account),
-we immediately remove your profile, recipes, week plan, shopping list, and
-nutrition log from Firebase, and your authentication record from Firebase
-Authentication. Backups are rotated within 30 days.
+When you delete your account from inside the app (Settings → Delete account), we
+immediately remove your profile, recipes, week plan, shopping list, nutrition and
+weight logs, meal and scanned-product history, cookbooks, push token, referral
+codes, and subscription entitlement record from Firebase, along with your
+authentication record. Backups are rotated within 30 days.
 
 ---
 
@@ -227,11 +281,17 @@ We use industry-standard measures to protect your data:
 - Firebase Security Rules that restrict every user's documents to that user
   only
 - Authentication via Firebase, Google, or Apple — we never see your password
+- Device-integrity checks (Firebase App Check, using Apple App Attest and Google
+  Play Integrity) to block abusive or tampered requests
 - Sensitive operations (account deletion, password change) require
   re-authentication
 
-No system is completely secure, so we cannot guarantee absolute security, but
-we work to reduce risk and respond quickly to any incident.
+No system is completely secure, so we cannot guarantee absolute security, but we
+work to reduce risk and respond quickly to any incident. If a data breach is
+likely to cause you serious harm, we will notify you and the Office of the
+Australian Information Commissioner as required by Australia's Notifiable Data
+Breaches scheme (and, for users in the UK or EU, the relevant authority without
+undue delay).
 
 ---
 
