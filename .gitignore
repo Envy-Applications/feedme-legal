@@ -1,0 +1,14 @@
+# Unreviewed legal drafts go in drafts/ and stay out of the published repo.
+drafts/
+
+# Editor, OS and scratch files.
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.bak
+*.log
+
+# Never publish local config or credentials.
+.env
+.env.*

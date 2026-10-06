@@ -4,11 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index, follow" />
-  <meta name="description" content="How to delete your Feed Me account and associated data." />
+  <meta name="description" content="How to delete your Feed Me account and data in the app or by email, exactly what is deleted, and what is kept and for how long." />
   <title>Delete your account — Feed Me</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
       --parchment: #FCFCFB;
@@ -100,32 +97,6 @@
     ul, ol { padding-left: 22px; margin: 0 0 16px; }
     li { margin-bottom: 6px; }
 
-    ol.steps { counter-reset: step; list-style: none; padding-left: 0; }
-    ol.steps > li {
-      position: relative;
-      padding: 2px 0 2px 44px;
-      margin-bottom: 14px;
-      min-height: 30px;
-    }
-    ol.steps > li::before {
-      counter-increment: step;
-      content: counter(step);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: var(--terracotta-glow);
-      border: 1px solid var(--terracotta);
-      color: var(--terracotta-deep);
-      font-weight: 700;
-      font-size: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
     hr { border: 0; border-top: 1px solid var(--border-soft); margin: 40px 0; }
 
     .tip {
@@ -137,7 +108,6 @@
       margin: 16px 0 24px;
       font-size: 16px;
     }
-    .tip p:last-child { margin-bottom: 0; }
 
     table {
       width: 100%;
@@ -186,88 +156,80 @@
         --border-soft: #2A2D2C;
       }
     }
+      .legal__tip {
+      background: var(--cream);
+      border: 1px solid var(--border-soft);
+      border-left: 3px solid var(--terracotta);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0 28px;
+      font-size: 16px;
+    }
+    .legal__tip p:last-child, .legal__tip ul:last-child { margin-bottom: 0; }
   </style>
 </head>
 <body>
   <main>
     <header class="doc-head">
-      <h1>Delete your account &amp; data</h1>
-      <p class="meta"><strong>App:</strong> Feed Me (Envy Applications, ABN 95 927 268 876)</p>
-      <p class="meta"><strong>Last updated:</strong> 29 June 2026</p>
+      <h1>Delete your account and data</h1>
+      <p class="meta"><strong>Last updated:</strong> 2 October 2026</p>
     </header>
 
-    <p class="lead">You can permanently delete your Feed Me account and all of the personal data associated with it at any time. This page explains how, what gets removed, and what is kept.</p>
-
-    <h2>Option 1 — Delete from inside the app (fastest)</h2>
-    <p>If you still have Feed Me installed and can sign in, this removes your account immediately:</p>
-    <ol class="steps">
-      <li>Open Feed Me and sign in to the account you want to delete.</li>
-      <li>Go to the <strong>Profile</strong> tab.</li>
-      <li>Tap <strong>Settings</strong>, then <strong>Delete account</strong>.</li>
-      <li>Confirm by typing <strong>DELETE</strong> when prompted, and re-authenticate if asked.</li>
-    </ol>
-    <p>Your account and data are deleted right away &mdash; there is no waiting period to reconsider, so only do this if you are sure.</p>
-
-    <h2>Option 2 — Request deletion by email</h2>
-    <p>If you have uninstalled the app, can&rsquo;t sign in, or would simply prefer we do it for you, email us and we will delete your account for you:</p>
-    <div class="tip">
-      <p style="margin:0;"><strong>Email:</strong> <a href="mailto:support@envyapplications.com?subject=Delete%20my%20Feed%20Me%20account">support@envyapplications.com</a></p>
-      <p style="margin:8px 0 0;">Use the subject line <strong>&ldquo;Delete my Feed Me account&rdquo;</strong> and send it from the email address on your account (or tell us the email you signed up with) so we can verify the request.</p>
-    </div>
-    <p>We will verify ownership of the account, complete the deletion, and confirm by reply. We respond to deletion requests within <strong>30 days</strong>, and usually much sooner.</p>
-
-    <h2>What gets deleted</h2>
-    <p>Deleting your account permanently removes the data we hold about you, including:</p>
-    <ul>
-      <li>Your account and sign-in record (email, display name, Firebase authentication)</li>
-      <li>Your profile and preferences (nutrition targets, body metrics, goals, settings)</li>
-      <li>Your recipes and any recipe photos you uploaded</li>
-      <li>Your weekly meal plans and shopping lists</li>
-      <li>Your nutrition log, meal history, and weight log</li>
-      <li>Your saved cookbooks and scanned-product history</li>
-      <li>Your notification settings and push notification token</li>
-      <li>Your referral codes and subscription entitlement record</li>
-    </ul>
-
-    <h2>What is kept, and for how long</h2>
-    <p>A small amount of data is retained where we are legally or operationally required to keep it. None of it is used to re-create your account:</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Data</th>
-          <th>Why it&rsquo;s kept</th>
-          <th>Retention</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Encrypted backups</td>
-          <td>Disaster recovery</td>
-          <td>Purged as backups rotate, within 30 days</td>
-        </tr>
-        <tr>
-          <td>Crash / error reports</td>
-          <td>App stability (PII-scrubbed)</td>
-          <td>Up to 90 days</td>
-        </tr>
-        <tr>
-          <td>Subscription / purchase records</td>
-          <td>Held by Apple, Google &amp; RevenueCat for billing, tax, and refunds</td>
-          <td>Per their own retention rules &mdash; we don&rsquo;t control this</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="tip">
-      <p><strong>Heads up about subscriptions:</strong> deleting your Feed Me account does <strong>not</strong> cancel an active subscription. Manage or cancel Feed Me Pro in your <strong>Google Play</strong> (Play Store &rarr; Subscriptions) or <strong>App Store</strong> (Settings &rarr; your name &rarr; Subscriptions) account before deleting, otherwise billing may continue through the store.</p>
-    </div>
-
-    <h2>Questions</h2>
-    <p>
-      Envy Applications (ABN 95 927 268 876)<br />
-      Western Australia, Australia<br />
-      Email: <a href="mailto:support@envyapplications.com">support@envyapplications.com</a>
-    </p>
-    <p class="meta">See also our <a href="./privacy.html">Privacy Policy</a>.</p>
+<p>You can permanently delete your Feed Me account, and the personal data stored with it, at any time. This page explains how, what is deleted and what is kept. Feed Me is provided by Envy Applications (ABN 95 927 268 876).</p>
+<div class="legal__tip">
+<p><strong>Before you delete:</strong> deleting your account does <strong>not</strong> cancel a subscription. Cancel Feed Me Pro in your <strong>App Store</strong> account (Settings → your name → Subscriptions) or <strong>Google Play</strong> account (Play Store → profile icon → Payments &amp; subscriptions → Subscriptions) first, or billing may continue.</p>
+</div>
+<h2 id="option-1-delete-it-in-the-app-fastest">Option 1: Delete it in the app (fastest)</h2>
+<p>If you still have Feed Me installed and can sign in, this removes your account straight away:</p>
+<ol>
+<li>Open Feed Me and sign in to the account you want to delete.</li>
+<li>Go to the <strong>Me</strong> tab.</li>
+<li>Scroll to <strong>Delete account</strong> and tap it.</li>
+<li>Read the screen, type <strong>Feed me</strong> in the box to confirm, and tap <strong>Delete my account</strong>.</li>
+</ol>
+<p>There is no waiting period and we cannot restore anything afterwards, so only do this if you are sure.</p>
+<h2 id="option-2-ask-us-to-delete-it">Option 2: Ask us to delete it</h2>
+<p>If you have uninstalled the app, cannot sign in, or would rather we do it for you, email us:</p>
+<div class="legal__tip">
+<p><strong>Email:</strong> <a href="mailto:support@feed-me-app.com?subject=Delete%20my%20Feed%20Me%20account">support@feed-me-app.com</a></p>
+<p>Use the subject line <strong>“Delete my Feed Me account”</strong>. Send it from the email address on your account, or tell us the email you signed up with (including an Apple “Hide My Email” address, if you used one) so we can check that the account is yours.</p>
+</div>
+<p>We will confirm the account is yours, delete it and reply to tell you. We aim to do this within <strong>30 days</strong>, and usually much sooner.</p>
+<p>If you signed in with Apple, please also remove Feed Me in your Apple account (Settings → your name → Sign-In &amp; Security → Sign in with Apple). We cannot revoke that from our side when we delete an account by email.</p>
+<h2 id="what-is-deleted">What is deleted</h2>
+<p>Deleting your account removes, from our systems:</p>
+<ul>
+<li>your account and sign-in record;</li>
+<li>everything stored under your account: your profile and preferences, food, water, weight and measurement logs, habits, recipes, cookbooks, meal plans, shopping lists, and your scanned-product and meal history;</li>
+<li>the files you uploaded, such as recipe, meal, progress and check-in photos;</li>
+<li>referral codes you created;</li>
+<li>your coaching connections, invitations, check-ins, alerts and notices, whether you were the coach or the client (the other person’s access to your data ends at once);</li>
+<li>your subscription entitlement and usage records on our servers, and our records of notifications sent to you;</li>
+<li>your share-extension tokens and any pending shared imports; and</li>
+<li>if you signed in with Apple, the token we hold for your Apple sign-in, which we try to revoke with Apple when you delete in the app.</li>
+</ul>
+<p>If you were a coach, the people you coached keep what is stored in their own accounts. Check-ins exchanged with you are deleted, and so are your connections to them. Items you added to their accounts, such as assigned habits and targets, stay with them. If you were a client, a coach may already have exported information while you were connected, and any private notes a coach wrote about you stay in the coach’s own account, so you may want to ask them to delete these.</p>
+<h2 id="what-is-kept-and-for-how-long">What is kept, and for how long</h2>
+<p>Some information is not deleted straight away. None of it is used to re-create your account.</p>
+<table>
+<thead>
+<tr><th>Information</th><th>Why it is kept</th><th>How long</th></tr>
+</thead>
+<tbody>
+<tr><td>Analytics and ad-measurement records (Mixpanel, AppsFlyer)</td><td>Linked to your account ID and device IDs, not to your name or email. Once your account is gone, that ID no longer connects to any account in Feed Me.</td><td>Up to 24 months. You can ask us to have them deleted sooner.</td></tr>
+<tr><td>Data already sent to Meta and TikTok through AppsFlyer</td><td>Held by them under their own policies</td><td>We cannot delete it. You can ask them.</td></tr>
+<tr><td>Subscription and billing records (RevenueCat, Apple, Google)</td><td>Billing, tax and refund records that they and the law require. RevenueCat also holds your email address with your purchase history.</td><td>As long as they and the law require. You can ask us to request deletion at RevenueCat.</td></tr>
+<tr><td>Notification registry (Expo)</td><td>Your push token, so notifications can be delivered</td><td>Until the device stops being registered. You can ask us to have it deleted.</td></tr>
+<tr><td>Crash reports (Sentry)</td><td>Keeping the app stable. They contain your account ID, not your name or email.</td><td>Up to 90 days</td></tr>
+<tr><td>Content you sent to our AI providers</td><td>Held by them briefly to run the service</td><td>Under their own terms (Anthropic: generally within 30 days)</td></tr>
+<tr><td>A shared copy of a public post you imported</td><td>Saves re-processing the same public post for the next person. It is keyed to the post, not to you.</td><td>Up to 30 days (the cover image up to about six weeks)</td></tr>
+<tr><td>Backups and logs held by our hosting providers</td><td>Disaster recovery and security</td><td>A short period, under the provider’s own deletion schedule</td></tr>
+</tbody>
+</table>
+<p><strong>Want these records deleted as well?</strong> Email us and ask. We will send deletion requests to Mixpanel, AppsFlyer, RevenueCat, Sentry and Expo for the ID linked to your account.</p>
+<h2 id="questions">Questions</h2>
+<p>Envy Applications (ABN 95 927 268 876)<br />Western Australia, Australia<br />Email: <a href="mailto:support@feed-me-app.com">support@feed-me-app.com</a></p>
+<p>See also our <a href="privacy.html">Privacy Policy</a>.</p>
   </main>
 </body>
 </html>

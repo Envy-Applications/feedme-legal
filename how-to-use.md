@@ -295,7 +295,7 @@ wait for the reset).
 - **Offline?** You can still browse what's loaded; changes sync when you're back online.
 - **AI looks off?** It's an estimate — tap to adjust the numbers before you log, and
   always check packaging for allergens.
-- **Need a hand?** Email us any time at **support@envyapplications.com** — we read
+- **Need a hand?** Email us any time at **support@feed-me-app.com** — we read
   every message.
 
 Happy cooking 🍲
