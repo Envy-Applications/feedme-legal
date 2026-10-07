@@ -2,7 +2,7 @@
 
 **Effective date:** 2 October 2026
 
-**Last updated:** 5 October 2026
+**Last updated:** 7 October 2026
 
 > **The short version.** This summary is for convenience. The full policy below is what applies.
 >
@@ -151,13 +151,13 @@ We do not use your information to make automated decisions that have legal or si
 
 **6.5 When it is on.**
 
-- **Where you are decides whether we ask first.** In the UK, the EU/EEA and Switzerland, and wherever we cannot tell your device’s region, ad measurement is **off** until you switch it on under **Me → Notifications → Ad measurement**. Everywhere else it is **on** from the moment we know you are an adult, and that same switch turns it off. We do not ask about advertising while you are setting the app up, and agreeing to our Terms is not an agreement to this.
+- **Where you are decides whether we ask first.** In the UK, the EU/EEA and Switzerland, and wherever we cannot tell your device’s region, ad measurement is **off** until you switch it on under **Me → Notifications → Ad measurement**. Everywhere else it is **on** from the moment we know you are an adult (on iPhone, once you have answered Apple’s tracking question, see 6.6), and that same switch turns it off. Apart from Apple’s question on iPhone, we do not ask about advertising while you are setting the app up, and agreeing to our Terms is not an agreement to this.
 - **Never for anyone under 18**, or whose age we do not know. For them the switch is not shown, nothing we store and no regional default can turn it on, and nothing is sent to AppsFlyer or our subscription provider for advertising.
 - **Region.** In the UK, the EU/EEA and Switzerland, and wherever we cannot tell your region, we also tell AppsFlyer that you have consented, in the form those laws require. We decide using your device’s region setting, which may not match where you live.
 - **Withdrawing.** Switch it off at any time under **Me → Notifications → Ad measurement**. This stops new data being sent. Data already sent stays with the recipients under their own policies. If you switch it off, we also clear the AppsFlyer ID and advertising ID we had passed to our subscription provider (its record of your device’s vendor or Android ID stays until you ask us to delete it).
 - **Switching it ON belongs to your signed-in session on that device.** When you sign out, the App forgets that you switched it on and clears the same two IDs, so on another device or after a reinstall it goes back to the default for your region. **Switching it OFF is kept**: a device where you have turned it off stays off, including after you sign out and sign back in.
 
-**6.6 iOS tracking prompt.** On iPhone, Apple’s question about tracking you across other companies’ apps and websites is asked in exactly one place: when you switch ad measurement **on** yourself. We never ask it while you are setting the app up, and we never ask it on a device where measurement is simply running on the default for your region — on those devices your advertising identifier is not used at all, and attribution works through Apple’s own aggregated measurement instead. If you choose “Ask App Not to Track”, your advertising identifier is not used. You can change this in iOS Settings → Privacy & Security → Tracking.
+**6.6 iOS tracking prompt.** On iPhone, nothing is sent to AppsFlyer until you have answered Apple’s question about tracking you across other companies’ apps and websites. Outside the UK, the EU/EEA and Switzerland, the App asks it once, if you are an adult: while you set the app up (on the screen where your plan is built), or shortly after you sign in if you sign in to an existing account instead. In the UK, the EU/EEA and Switzerland it is asked only when you switch ad measurement **on** yourself. If you choose “Allow”, AppsFlyer also receives your advertising identifier. If you choose “Ask App Not to Track”, your advertising identifier is not used and attribution works through Apple’s own aggregated measurement instead; ad measurement otherwise stays as described in 6.5, and you can still switch it off under **Me → Notifications → Ad measurement**. You can change your answer to Apple’s question in iOS Settings → Privacy & Security → Tracking.
 
 **6.7 Apple Search Ads.** While ad measurement is on for your device, our subscription provider on iPhone also collects an attribution token from Apple, which tells us whether you installed Feed Me after an Apple Search Ads campaign. This does not use your advertising identifier. It follows the same regional and age rules as the rest of this section, and it stops when you switch ad measurement off.
 
