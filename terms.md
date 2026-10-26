@@ -2,7 +2,7 @@
 
 **Effective date:** 2 October 2026
 
-**Last updated:** 2 October 2026
+**Last updated:** 16 October 2026
 
 > **The short version.** This summary is for convenience only. The full Terms below are what apply.
 >
@@ -16,7 +16,7 @@
 
 ## 1. About these Terms
 
-**1.1 Who we are.** These Terms are an agreement between you and Envy Applications (ABN 95 927 268 876), a business based in Western Australia, Australia (“Feed Me”, “we”, “us” or “our”).
+**1.1 Who we are.** These Terms are an agreement between you and Nathan Vink, a sole trader trading as Envy Applications (ABN 95 927 268 876), based in Western Australia, Australia (“Feed Me”, “we”, “us” or “our”).
 
 **1.2 What they cover.** These Terms apply to the Feed Me mobile app for iPhone and iPad and, when it is released, Android (the “App”), our website at www.feed-me-app.com (the “Website”) and everything we provide through them, including AI features, Pro subscriptions and coaching features (together, the “Service”).
 
@@ -292,7 +292,7 @@ To the maximum extent the law permits, and subject to section 16:
 - **Product claims.** We, not Apple, are responsible for addressing any claims by you or a third party about the App or your use of it, including product liability claims, claims that the App fails to meet a legal or regulatory requirement, and claims under consumer protection, privacy or similar laws, including in connection with the App’s use of the HealthKit framework.
 - **Intellectual property claims.** If a third party claims that the App or your use of it infringes their intellectual property rights, we, not Apple, are responsible for the investigation, defence, settlement and discharge of that claim.
 - **Legal compliance.** You confirm that you are not located in a country subject to a US Government embargo or designated a “terrorist supporting” country, and that you are not on any US Government list of prohibited or restricted parties.
-- **Developer details.** Questions, complaints or claims about the App can be sent to: Envy Applications (ABN 95 927 268 876), Western Australia, Australia, support@feed-me-app.com.
+- **Developer details.** Questions, complaints or claims about the App can be sent to: Nathan Vink, trading as Envy Applications (ABN 95 927 268 876), Western Australia, Australia, support@feed-me-app.com.
 - **Third-party terms.** You must follow any third-party terms that apply when you use the App, such as your mobile data agreement.
 - **Third-party beneficiary.** Apple and its subsidiaries are third-party beneficiaries of this section and these Terms. When you accept these Terms, Apple has the right to enforce them against you as a third-party beneficiary.
 
@@ -324,7 +324,7 @@ We may update these Terms. If a change is material, we will publish the updated 
 
 ## 23. Contact
 
-Envy Applications (ABN 95 927 268 876)\
+Nathan Vink, trading as Envy Applications (ABN 95 927 268 876)\
 Western Australia, Australia\
 Email: support@feed-me-app.com
 

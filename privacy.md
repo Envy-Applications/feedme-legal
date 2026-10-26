@@ -2,7 +2,7 @@
 
 **Effective date:** 2 October 2026
 
-**Last updated:** 7 October 2026
+**Last updated:** 16 October 2026
 
 > **The short version.** This summary is for convenience. The full policy below is what applies.
 >
@@ -15,7 +15,7 @@
 
 ## 1. Who we are and what this policy covers
 
-**1.1 Who we are.** Feed Me is provided by Envy Applications (ABN 95 927 268 876), a business based in Western Australia, Australia (“Feed Me”, “we”, “us” or “our”). We are responsible for the personal information described in this policy.
+**1.1 Who we are.** Feed Me is provided by Nathan Vink, a sole trader trading as Envy Applications (ABN 95 927 268 876), based in Western Australia, Australia (“Feed Me”, “we”, “us” or “our”). We are responsible for the personal information described in this policy.
 
 **1.2 What it covers.** This policy applies to the Feed Me mobile app for iPhone and iPad and, when it is released, Android (the “App”), our website at www.feed-me-app.com (the “Website”) and related support. It also covers coaching features, to the extent we handle information for them (see section 7). It does not cover other companies’ websites and apps that we link to, or what a coach does with information after taking it out of Feed Me.
 
@@ -337,7 +337,7 @@ If we make a material change, we will publish the updated policy on our Website 
 
 ## 18. Contact and complaints
 
-Envy Applications (ABN 95 927 268 876)\
+Nathan Vink, trading as Envy Applications (ABN 95 927 268 876)\
 Western Australia, Australia\
 Email: support@feed-me-app.com
 

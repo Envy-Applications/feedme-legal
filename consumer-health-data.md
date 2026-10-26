@@ -2,13 +2,13 @@
 
 **Effective date:** 2 October 2026
 
-**Last updated:** 5 October 2026
+**Last updated:** 16 October 2026
 
 > **What this is.** Some US state laws, including Washington’s My Health My Data Act and similar laws in Nevada and Connecticut, ask us to explain separately how we handle “consumer health data”. This notice does that for Feed Me. It adds to our [Privacy Policy](privacy.html), which covers everything else we do with personal information.
 
 ## 1. Who we are
 
-Feed Me is provided by Envy Applications (ABN 95 927 268 876), Western Australia, Australia (“we”, “us”). You can contact us at support@feed-me-app.com.
+Feed Me is provided by Nathan Vink, a sole trader trading as Envy Applications (ABN 95 927 268 876), Western Australia, Australia (“we”, “us”). You can contact us at support@feed-me-app.com.
 
 ## 2. What consumer health data is
 
@@ -81,6 +81,6 @@ If we change this notice, we will update the date at the top and, if the change 
 
 ## 10. Contact
 
-Envy Applications (ABN 95 927 268 876)\
+Nathan Vink, trading as Envy Applications (ABN 95 927 268 876)\
 Western Australia, Australia\
 Email: support@feed-me-app.com

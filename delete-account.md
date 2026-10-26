@@ -1,8 +1,8 @@
 # Delete your account and data
 
-**Last updated:** 2 October 2026
+**Last updated:** 16 October 2026
 
-You can permanently delete your Feed Me account, and the personal data stored with it, at any time. This page explains how, what is deleted and what is kept. Feed Me is provided by Envy Applications (ABN 95 927 268 876).
+You can permanently delete your Feed Me account, and the personal data stored with it, at any time. This page explains how, what is deleted and what is kept. Feed Me is provided by Nathan Vink, a sole trader trading as Envy Applications (ABN 95 927 268 876).
 
 > **Before you delete:** deleting your account does **not** cancel a subscription. Cancel Feed Me Pro in your **App Store** account (Settings → your name → Subscriptions) or **Google Play** account (Play Store → profile icon → Payments & subscriptions → Subscriptions) first, or billing may continue.
 
@@ -63,7 +63,7 @@ Some information is not deleted straight away. None of it is used to re-create y
 
 ## Questions
 
-Envy Applications (ABN 95 927 268 876)\
+Nathan Vink, trading as Envy Applications (ABN 95 927 268 876)\
 Western Australia, Australia\
 Email: [support@feed-me-app.com](mailto:support@feed-me-app.com)
 
